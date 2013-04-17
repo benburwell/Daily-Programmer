@@ -5,7 +5,7 @@
 # 
 # Ben Burwell
 
-def digitalRoot(num)
+def digital_root(num)
 
 	if num < 10
 		return num
@@ -20,14 +20,14 @@ def digitalRoot(num)
 	sum += num
 
 	if sum > 9
-		return digitalRoot(sum)
+		return digital_root(sum)
 	end
 
 	return sum
 end
 
 # should print 8
-puts digitalRoot(31337)
+puts digital_root(31337)
 
 # should print 1
-puts digitalRoot(1073741824)
+puts digital_root(1073741824)
